@@ -3,7 +3,10 @@ buildscript {
         springBootVersion = '1.2.6.RELEASE'
     }
     repositories {
-        mavenCentral()
+        	mavenCentral()
+        	maven {url "https://repo.springsource.org/milestone"}
+        	maven {url "https://repo.springsource.org/release"}
+        	maven {url "http://repo.springsource.org/plugins-release"}
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}") 
@@ -26,6 +29,9 @@ targetCompatibility = 1.8
 
 repositories {
     mavenCentral()
+    maven {url "https://repo.springsource.org/milestone"}
+    maven {url "https://repo.springsource.org/release"}
+    maven {url "http://repo.springsource.org/plugins-release"}
 }
 
 
